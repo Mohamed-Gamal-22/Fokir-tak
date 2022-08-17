@@ -1,0 +1,535 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+.slider {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./Imges/img/slider/slider-01.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.slider .nav {
+  padding: 25px 0;
+  text-transform: capitalize;
+}
+
+.slider .nav p {
+  float: left;
+  width: 55%;
+  font-size: 28px;
+  color: #ff305b;
+  font-weight: bold;
+}
+.slider .nav img {
+  display: none;
+  background-color: #fff;
+  float: right;
+  border-radius: 4px;
+}
+
+.slider .nav ul {
+  float: right;
+  width: 45%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider .nav ul li {
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.slider .nav ul li:hover {
+  color: #ff305b;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header p {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+.header h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+  color: #ff305b;
+}
+
+.header p:last-child {
+  font-weight: 300;
+}
+
+/* -------------------------------------------- */
+
+.hello .profile {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hello .profile .img {
+  width: 30%;
+  border: 10px solid #444;
+  border-radius: 6px;
+  position: relative;
+}
+
+.hello .profile .img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+.hello .profile .img .tr {
+  height: 0%;
+  width: 0%;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: #ff305b;
+  transition: 0.4s;
+  border-radius: 4px;
+  opacity: 0;
+}
+.hello .profile .img:hover .tr {
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.hello .profile .info {
+  width: 50%;
+  color: #444;
+}
+
+.hello .profile .info h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.hello .profile .info h3 span {
+  margin-right: 10px;
+  color: #ff305b;
+}
+
+.hello .profile .info > p {
+  line-height: 1.7;
+  border-bottom: 1px dashed #444;
+  padding-bottom: 25px;
+}
+
+.hello .profile .info .title {
+  width: 100%;
+}
+
+.hello .profile .info .title p {
+  float: left;
+  width: 50%;
+  padding: 20px 0 0 0;
+  text-transform: capitalize;
+}
+
+.hello .profile .info .title p span {
+  font-weight: 600;
+}
+
+.hello .profile .info button {
+  background-color: #ff305b;
+  border: none;
+  padding: 15px 32px;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+.service {
+  background-color: #f1f1f1;
+  color: #444;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 100px 0;
+  margin-top: 100px;
+}
+
+.service h2 {
+  font-size: 35px;
+  margin-bottom: 54px;
+  border-bottom: 3px solid #ff305b;
+  width: 200px;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+.service .part {
+  width: 22%;
+  float: left;
+  margin-top: 50px;
+  margin-left: 25px;
+  padding: 34px 0 50px;
+  transition: 0.3s;
+}
+
+.service .part:hover {
+  background-color: #fff;
+  box-shadow: 5px 5px 5px #ccc;
+  border-radius: 4px;
+}
+
+.service .part h3 {
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.service .part img {
+  width: 60px;
+  height: 60px;
+}
+
+/* --------------------------------------- */
+
+.port {
+  background-color: #fff;
+  margin-top: 50px;
+  padding: 50px 0;
+  text-align: center;
+  color: #444;
+  text-transform: capitalize;
+  font-size: 24px;
+  margin-bottom: 70px;
+}
+
+.port p {
+  background-color: #ff305b;
+  width: 100px;
+  margin: auto;
+  height: 1px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.port span {
+  margin: 18px;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.port span:first-of-type {
+  color: #ff305b;
+}
+
+.port span:hover {
+  color: #ff305b;
+}
+
+.port .img {
+  margin-top: 50px;
+  width: 31%;
+  position: relative;
+  float: left;
+  margin: 10px;
+}
+
+.port .img img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.port .img .layer {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.4s;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.port .img .layer:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.rate .part {
+  border: 3px solid #fff;
+}
+
+.rate .part img {
+  width: 40px;
+  height: 40px;
+}
+
+.rate .part p {
+  color: #ff305b;
+}
+
+/* ----------------------------------------------------- */
+
+.client {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  margin-top: 50px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #444;
+}
+
+.client > h3 {
+  font-size: 35px;
+}
+
+.client > p {
+  width: 200px;
+  height: 1px;
+  background-color: #ff305b;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.client .test {
+  display: flex;
+  width: 50%;
+  margin: 50px auto;
+  background-color: #eee;
+  padding: 50px 20px;
+  justify-content: space-around;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    rgba(226, 20, 15, 0.4),
+    rgba(120, 120, 200, 0.4)
+  );
+}
+
+.client .test img {
+  width: 110px;
+  border-radius: 50%;
+  height: 110px;
+}
+
+.client .test .info {
+  width: 75%;
+  text-align: left;
+}
+
+.client .test .info h3 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 23px;
+  margin: 15px 0;
+}
+.client .test .info p {
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+.client .test .info .stars {
+  padding: 15px 0;
+}
+
+.client .test .info .stars img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ----------------------------------------------------- */
+
+.blog {
+  text-align: left;
+  background-color: #f1f1f1;
+  padding: 50px 0;
+}
+
+.blog > h3 {
+  font-size: 29px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.blog > p {
+  width: 100px;
+  height: 2px;
+  background-color: #ff305b;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.blog .cont {
+  float: left;
+  width: 30%;
+  background-color: #fff;
+  margin: 12px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.blog .cont img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.blog .cont span {
+  color: #999;
+  padding: 0 0 20px 10px;
+}
+
+.blog .cont h3 {
+  margin: 15px 0;
+  text-transform: capitalize;
+  padding: 0 0 20px 10px;
+}
+
+.blog .cont p {
+  line-height: 1.7;
+  color: #999;
+  margin-bottom: 15px;
+  padding: 0 0 20px 10px;
+}
+
+.blog .cont a {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  text-decoration: none;
+  color: #444;
+  text-transform: uppercase;
+}
+
+/* --------------------------------- */
+
+.contact {
+  width: 75%;
+  margin: 50px auto;
+}
+
+.contact form {
+  margin: auto;
+  width: 70%;
+}
+
+.contact form input {
+  float: left;
+  width: 48%;
+  margin: 25px 25px 25px 0;
+  padding: 12px;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+}
+
+.contact form input.n {
+  float: right;
+  margin-right: 0;
+}
+
+.contact form input.t,
+.contact form textarea {
+  width: 100%;
+}
+
+.contact form textarea {
+  padding: 12px;
+  border: 2px solid #ccc;
+  margin-top: 30px;
+}
+
+.contact h3 {
+  text-align: center;
+  font-size: 27px;
+  text-transform: uppercase;
+}
+
+.contact > p {
+  width: 100px;
+  margin: auto;
+  margin-top: 15px;
+  height: 2px;
+  background-color: #ff305b;
+  margin-bottom: 25px;
+}
+
+.contact form button {
+  background-color: #ff305b;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* ///////////////////////////////////////////////// */
+
+footer {
+  background-color: #444;
+  color: #fff;
+  padding: 30px;
+}
+
+footer .icon {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+footer .icon img {
+  margin: auto;
+  text-align: center;
+  width: 30px;
+  margin: 10px;
+  height: 30px;
+}
+
+footer p {
+  text-align: center;
+  font-weight: bold;
+}
+
+footer p span {
+  color: #ff305b;
+}
